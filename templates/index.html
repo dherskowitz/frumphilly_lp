@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section 
+        id="home" 
+        style="background:url({{ url_for('static', filename='dist/images/libertybell.jpg') }}) no-repeat center center /cover">
+        <h1 class="bauhaus capitalize">your community</h1>
+        <h1 class="bauhaus capitalize">your philly</h1>
+        <img 
+            alt="Frum Philly Logo"
+            class="home__logo"
+            src="{{ url_for('static', filename='dist/images/logo.svg') }}">
+    </section>
+
+    <section id="ctaOne">
+        <div class="ctaOne__question center-text">
+            <h1 class="bauhaus capitalize">what is frum philly?</h1>
+        </div>        
+        <div class="ctaOne__answer">This is just temporary placeholder text; kind of like when a friend saves a spot for you in line, only to be replaced by you when you arrive. At some point someone will replace this block of text with useful words so visitors can learn more about your services/products offered by the website! </div>
+    </section>
+
+    <section id="ctaTwo">
+        <div class="ctaTwo__question center-text">
+            <h1 class="bauhaus capitalize">what can frum philly offer me?</h1>
+        </div>   
+        <div class="ctaTwo__answers">
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Lorem, ipsum.
+                </h2>
+                <p class="ctaTwo__answers__box__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, assumenda.</p>
+            </div>
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Maxime, ipsa!
+                </h2>
+                <p class="ctaTwo__answers__box__content">Porro cumque magnam et earum laboriosam omnis accusantium, labore beatae!</p>
+            </div>
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Placeat, repellendus.
+                </h2>
+                <p class="ctaTwo__answers__box__content">Itaque magnam saepe animi tempora ducimus consequatur magni ipsa quia.</p>
+            </div>
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Libero, animi?
+                </h2>
+                <p class="ctaTwo__answers__box__content">Assumenda voluptate sint non doloribus officiis culpa commodi, nostrum debitis!</p>
+            </div>
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Dolorem, provident.
+                </h2>
+                <p class="ctaTwo__answers__box__content">Asperiores quisquam sint nobis! Illum, ullam repellendus! Itaque, laborum sunt.</p>
+            </div>
+            <div class="ctaTwo__answers__box">
+                <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    Eum, dignissimos?
+                </h2>
+                <p class="ctaTwo__answers__box__content">Eum repellat dolor quis facilis deserunt obcaecati amet aut dolorem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contact-wrapper">
+            <h2 class="contact__title bauhaus capitalize">get informed!</h2>
+            <h4 class="contact__subtitle">Sign up to get notified when frumpPhilly launches.</h4>
+            <form action="">
+                <input class="form-input" type="email" name="email" placeholder="Please enter your email..." required>
+                <input  class="form-submit" type="submit" value="SEND">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <img 
+            alt="Frum Philly Logo"
+            class="footer__logo"
+            src="{{ url_for('static', filename='dist/images/logo.svg') }}">
+        <div class="footer__copyright bauhaus">&copy; {{ currentYear }} <a href="#">frumpPhilly.com</a></div>
+    </footer>
+
+{% endblock content %}
+    
