@@ -123,9 +123,49 @@ a {
     background-color: $blue-green;
     display: flex;
     justify-content: center;
+    position: relative;
 
     #contact-wrapper {
         margin: 0 7em;
+    }
+
+    #error_notice {
+        color: $red;
+        display: none;
+    }
+
+    #error_notice.show {
+        display: block;
+    }
+
+    #contact-overlay {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: rgba(0, 181, 204, 0.9);
+        color: $black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        text-align: center;
+
+        &.show {
+            display: flex;
+        }
+
+        #contact-overlay__title {
+            margin: 0;
+            margin-bottom: 0.5em;
+        }
+
+        #contact-overlay__loader {
+            width: 1.5em;
+        }
     }
 }
 

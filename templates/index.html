@@ -65,12 +65,19 @@
     </section>
 
     <section id="contact">
+        <div id="contact-overlay">
+            <h2 id="contact-overlay__title">Sending Message... 😐</h2>
+            <img 
+                id="contact-overlay__loader"
+                src="{{ url_for('static', filename='dist/images/loading.svg') }}" alt="">
+        </div>
         <div id="contact-wrapper">
             <h2 class="contact__title bauhaus capitalize">get informed!</h2>
             <h4 class="contact__subtitle">Sign up to get notified when frumpPhilly launches.</h4>
-            <form action="">
-                <input class="form-input" type="email" name="email" placeholder="Please enter your email..." required>
-                <input  class="form-submit" type="submit" value="SEND">
+            <h2 id="error_notice">Please enter a valid email.</h2>
+            <form>
+                <input class="form-input" id="signup-email" type="email" name="email" placeholder="Please enter your email..." required>
+                <input  class="form-submit" id="signup-submit" type="submit" value="SEND">
             </form>
         </div>
     </section>
