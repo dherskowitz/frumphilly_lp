@@ -1,0 +1,69 @@
+@media (max-width:925px) {
+    .ctaOne__answer {
+        font-size: 1em;
+    }
+
+    #home {
+        padding: 0 1em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .contact__title,
+    .contact__subtitle {
+        text-align: center;
+    }
+
+    .contact__title {
+        font-size: 3em;
+    }
+
+    .contact__subtitle {
+        font-size: 2em;
+    }
+
+    .form-input {
+        width: 20em;
+        margin: 0 auto 1em;
+    }
+
+    .form-submit {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:575px) {
+    #home {
+        height: 50vh;
+
+        h1 {
+            font-size: 4em;
+        }
+    }
+
+    .form-input {
+        width: 80vw;
+        margin: 0 auto 1em;
+    }
+
+    .contact__title {
+        font-size: 2em;
+    }
+
+    .contact__subtitle {
+        font-size: 1.5em;
+    }
+
+    .ctaOne__answer {
+        width: inherit;
+    }
+}
+
+@media (max-width:360px) {
+    #home h1 {
+        font-size: 3em;
+    }
+}
