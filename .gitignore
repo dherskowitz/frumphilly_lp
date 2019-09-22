@@ -1,4 +1,5 @@
 /client_secret.json
+/.env
 
 # Created by https://www.gitignore.io/api/git,node,flask,python,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=git,node,flask,python,visualstudiocode
