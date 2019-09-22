@@ -42,8 +42,8 @@ def signup():
     user_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
 
     # Use my ip from env file for local testing
-    if user_ip == "127.0.0.1":
-        user_ip = os.getenv("MY_IP")
+    # if user_ip == "127.0.0.1":
+    #     user_ip = os.getenv("MY_IP")
 
     # get location from ip
     ip_url_base = "http://ipinfo.io/" + user_ip
@@ -51,9 +51,6 @@ def signup():
     ip_url = ip_url_base + ip_url_prefs
     ip_response = requests.get(ip_url)
     ip_data = ip_response.json()
-
-    print("=============")
-    print(ip_data)
 
     if email == "" or not re.match(email_pattern, email):
         response = {"response": "invalid_email"}
