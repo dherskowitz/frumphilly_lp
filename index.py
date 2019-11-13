@@ -31,7 +31,10 @@ client = gspread.authorize(creds)
 
 @app.route("/")
 def index():
-    return render_template("index.html", currentYear=datetime.now().year)
+    filename = os.path.join(app.static_folder, 'content.json')
+    with open(filename) as content:
+        data = json.load(content)
+    return render_template("index.html", currentYear=datetime.now().year, content=data)
 
 
 @app.route("/signup", methods=["POST"])

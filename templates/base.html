@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/app.css') }}">
-    <title>Document</title>
+    <title>Frum Philly: Go beyond your "daled amos".</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dist/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='dist/images/favicon.ico') }}" type="image/x-icon">
 </head>
 <body>
 
     <main>
-        {% block content %}        
+        {% block content %}
         {% endblock content %}
     </main>
 
