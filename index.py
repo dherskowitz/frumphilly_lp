@@ -29,15 +29,16 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 
 
 def get_client_ip(request):
-    ip = request.META.get("HTTP_CF_CONNECTING_IP")
+    ip = request.headers.get("HTTP_CF_CONNECTING_IP")
     if ip is None:
-        ip = request.META.get("REMOTE_ADDR")
+        ip = request.headers.get("REMOTE_ADDR")
     return ip
 
 
 @app.route("/")
 def index():
     print("==============")
+    # print(dir(request))
     print(get_client_ip(request))
     filename = os.path.join(app.static_folder, "content.json")
     with open(filename) as content:
