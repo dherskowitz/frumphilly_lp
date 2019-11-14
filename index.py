@@ -26,7 +26,6 @@ creds_dict = json.loads(json_creds)
 creds_dict["private_key"] = creds_dict["private_key"].replace("\\\\n", "\n")
 # creds = ServiceAccountCredentials.from_json_keyfile_name("client_secret.json", scope)
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
-client = gspread.authorize(creds)
 
 
 @app.route("/")
@@ -41,6 +40,7 @@ def index():
 
 @app.route("/signup", methods=["POST"])
 def signup():
+    client = gspread.authorize(creds)
     email = request.form["email"]
 
     # get user ip
