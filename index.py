@@ -37,9 +37,6 @@ def get_client_ip(request):
 
 @app.route("/")
 def index():
-    print("==============")
-    print(dir(request))
-    print(get_client_ip(request))
     filename = os.path.join(app.static_folder, "content.json")
     with open(filename) as content:
         data = json.load(content)
