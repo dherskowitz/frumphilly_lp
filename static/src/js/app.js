@@ -36,6 +36,7 @@ function sendMail(form) {
       if (data.response === "success") {
         contactOverlayTitle.innerText = "Message sent 😎";
         contactOverlayLoader.style.display = "none";
+        signupEmail.value = "";
       }
     });
 }
