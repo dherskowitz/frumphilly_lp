@@ -1,7 +1,6 @@
 {
   "what_is": "Frum Philly is a place for the Philadelphia and south jersey jewish communities to come together. A place to get to know whats happening in your community. A place people can connect and find out about events, jobs, sales, and more. <br><br> Frum Philly is here to help you find out more about your community. Find out about and contribute to a growing community of PA Jewish neighborhoods and all that happens here. ",
-  "content_boxes": [
-    {
+  "content_boxes": [{
       "title": "Events",
       "content": "See whats happening around you. Frum Philly will have all the latest and greatest events occurring in your neighborhood. "
     },
@@ -24,6 +23,47 @@
     {
       "title": "Your Suggestions",
       "content": "Have an idea for a section? Frum Philly is open to hearing them. You will be able to contact us with your suggestions."
+    }
+  ],
+  "upcoming_events": [{
+      "event_name": "Pre-Chanukah Festival Party",
+      "event_host": "Lower Merion Synagogue",
+      "event_location": "123 Lancaster Road, Bala Cynwyd PA 19004",
+      "event_contact": "SMSVED@gmail.com",
+      "event_attachment": "index.jfif",
+      "event_date": "December 18th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+          "time_1": "5:45pm Dinner from EJ's Place"
+        },
+        {
+          "time_2": "6:30pm Concert featuring Naftali Blumenthal"
+        }
+      ]
+    },
+    {
+      "event_name": "Hanukkah Celebration",
+      "event_host": "Mikveh Israel",
+      "event_location": "44 North Fourth Street, Philadelphia PA 19106",
+      "event_contact": "info@mikvehisrael.com",
+      "event_attachment": "mikveh_israel.pdf",
+      "event_date": "December 8th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "4:time_1": "4:30pm 8th Hanukkah candle"
+      }]
+    },
+    {
+      "event_name": "Pre-Chanukah Event",
+      "event_host": "BIOZ Shul",
+      "event_location": "8201 Castor Avenue, Philadelphia PA 19152",
+      "event_contact": "Leah Grossman at 810-333-100",
+      "event_attachment": "bioz.pdf",
+      "event_date": "December 15th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "1:30pm Featuring Comedian Eli Leboxicz"
+      }]
     }
   ]
 }

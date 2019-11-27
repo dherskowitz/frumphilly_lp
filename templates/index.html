@@ -36,6 +36,43 @@
         </div>
     </section>
 
+    <section id="upcoming_events_container">
+        <div id="upcoming_events__title" class="center-text">
+            <h1 class="bauhaus capitalize">Upcoming Events</h1>
+        </div>
+        <div id="upcoming_events">
+            {% for item in content.upcoming_events %}
+                <div class="upcoming_events__event">
+                    <h2 class="event_name bauhaus">{{ item.event_name }}</h2><br>
+                    <div>Hosted by {{ item.event_host }}</div><br>
+                    <h3>Where?</h3><br>
+                    <div>{{ item.event_location }}</div><br>
+                    <a class="event_link" target="_blank" href="https://maps.google.com/?q={{ item.event_location }}">See Map</a>
+                    <br><br>
+                    <h3>When?</h3><br>
+                    <div>{{ item.event_date }}</div><br>
+                    <h3>Event Contact</h3><br>
+                    <div>{{ item.event_contact }}</div><br>
+                    {% if item.event_rsvp %}
+                        <div class="event_rsvp">
+                            <p>Requires RSVP?</p> 
+                            <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/check-circle.svg') }}" alt="">
+                        </div><br>
+                    {% else %}
+                        <div class="event_rsvp">
+                            <p>Requires RSVP?</p> 
+                            <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/x-circle.svg') }}" alt="">
+                        </div><br>
+                    {% endif %}
+                    {% for time in item.event_time %}
+                        {{ time.event_times }}
+                    {% endfor %}
+                    <a class="event_link" href="{{ url_for('static', filename='dist/images/') }}{{ item.event_attachment }}" target="_blank"">See Event Flyer</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
     <section id="contact">
         <div id="contact-overlay">
             <h2 id="contact-overlay__title">Sending Message... 😃</h2>

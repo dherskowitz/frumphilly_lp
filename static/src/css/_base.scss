@@ -8,6 +8,15 @@ img {
     max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: $black;
@@ -77,6 +86,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em 0;
 }
 
 .ctaOne__answer {
@@ -102,6 +112,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em 0;
 }
 
 .ctaTwo__answers {
@@ -112,13 +123,28 @@ a {
     justify-content: center;
     max-width: 1920px;
     margin: 0 auto;
+
+    @media (max-width: 1600px) {
+        grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
+    }
+
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat(auto-fill, minmax(10em, 20em));
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .ctaTwo__answers__box {
-    border: 1px solid $black;
-    padding: 1em;
+    // border: 1px solid $black;
+    // padding: 1em;
     color: $black;
-    background-color: $white;
+    // background-color: $white;
+    background: $white;
+    padding: 1em;
+    box-shadow: 0px 2px 6px 0px rgba(103, 128, 159, 1);
 }
 
 // Get informed / contact section
@@ -171,6 +197,74 @@ a {
             width: 1.5em;
         }
     }
+}
+
+#upcoming_events_container {
+    background-color: $light-grey;
+}
+
+#upcoming_events {
+    font-family: $secondary-font;
+    color: $black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 30em));
+    padding: 2em;
+    grid-gap: 2em;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @media (max-width: 1600px) {
+        grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
+    }
+
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat(auto-fill, minmax(10em, 20em));
+    }
+
+    @media (max-width: 1100px) {
+        grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
+    }
+}
+
+.upcoming_events__event {
+    background: $white;
+    padding: 1em;
+    box-shadow: 0px 2px 6px 0px rgba(103, 128, 159, 1);
+
+    &:last-of-type {
+        @media (max-width: 1100px) {
+            grid-column: span 2;
+        }
+    }
+
+    @media (max-width: 991px) {
+        grid-column: span 2;
+    }
+}
+
+#upcoming_events__title {
+    background: $light-sea-green;
+    font-size: 4em;
+    padding: 1em 0;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.event_link {
+    text-decoration: underline;
+    color: $blue-green;
+}
+
+.event_rsvp {
+    display: flex;
+    align-items: center;
+}
+
+.event_rsvp__icon {
+    margin-left: 1em;
 }
 
 .contact__title {
