@@ -217,6 +217,8 @@ a {
     justify-content: center;
     max-width: 1920px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 
     @media (max-width: 1600px) {
         grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
@@ -235,6 +237,9 @@ a {
     background: $white;
     padding: 1em;
     box-shadow: 0px 2px 6px 0px rgba(103, 128, 159, 1);
+    width: 25em;
+    margin: 1em;
+    // flex-grow: 1;
 
     &:last-of-type {
         @media (max-width: 1100px) {

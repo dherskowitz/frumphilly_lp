@@ -64,6 +64,18 @@
       "event_times": [{
         "time_1": "1:30pm Featuring Comedian Eli Leboxicz"
       }]
+    },
+    {
+      "event_name": "Pre-Chanukah Mesiba",
+      "event_host": "The Mesivta",
+      "event_location": "314 Levering Road, Bala Cynwyd PA 19004",
+      "event_contact": "contact@themesivta.org",
+      "event_attachment": "the-mesivta.jfif",
+      "event_date": "December 19th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "7:00pm Featuring Dovid Gabay"
+      }]
     }
   ]
 }
