@@ -5,29 +5,29 @@
     <section
         id="home"
         style="background:url({{ url_for('static', filename='dist/images/libertybell.jpg') }}) no-repeat center center /cover">
-        <h1 class="bauhaus capitalize">your community</h1>
-        <h1 class="bauhaus capitalize">your philly</h1>
+        <h1 class="marker capitalize">your community</h1>
+        <h1 class="marker capitalize">your philly</h1>
         <img
             alt="Frum Philly Logo"
             class="home__logo"
-            src="{{ url_for('static', filename='dist/images/logo.svg') }}">
+            src="{{ url_for('static', filename='dist/images/FrumPhilly_2.svg') }}">
     </section>
 
     <section id="ctaOne">
         <div class="ctaOne__question center-text">
-            <h1 class="bauhaus capitalize">what is frum philly?</h1>
+            <h1 class="marker capitalize">what is frum philly?</h1>
         </div>
         <div class="ctaOne__answer">{{ content.what_is | safe}}</div>
     </section>
 
     <section id="ctaTwo">
         <div class="ctaTwo__question center-text">
-            <h1 class="bauhaus capitalize">what can frum philly offer me?</h1>
+            <h1 class="marker capitalize">what can frum philly offer me?</h1>
         </div>
         <div class="ctaTwo__answers">
             {% for item in content.content_boxes %}
                 <div class="ctaTwo__answers__box">
-                    <h2 class="ctaTwo__answers__box__title bauhaus capitalize">
+                    <h2 class="ctaTwo__answers__box__title marker capitalize">
                         {{ item.title }}
                     </h2>
                     <p class="ctaTwo__answers__box__content">{{ item.content }}</p>
@@ -38,12 +38,12 @@
 
     <section id="upcoming_events_container">
         <div id="upcoming_events__title" class="center-text">
-            <h1 class="bauhaus capitalize">Upcoming Events</h1>
+            <h1 class="marker capitalize">Upcoming Events</h1>
         </div>
         <div id="upcoming_events">
             {% for item in content.upcoming_events %}
                 <div class="upcoming_events__event">
-                    <h2 class="event_name bauhaus">{{ item.event_name }}</h2><br>
+                    <h2 class="event_name marker">{{ item.event_name }}</h2><br>
                     <div>Hosted by {{ item.event_host }}</div><br>
                     <h3>Where?</h3><br>
                     <div>{{ item.event_location }}</div><br>
@@ -81,7 +81,7 @@
                 src="{{ url_for('static', filename='dist/images/loading.svg') }}" alt="">
         </div>
         <div id="contact-wrapper">
-            <h2 class="contact__title bauhaus capitalize">get informed!</h2>
+            <h2 class="contact__title marker capitalize">get informed!</h2>
             <h4 class="contact__subtitle">Sign up to get notified when FrumPhilly launches.</h4>
             <h2 id="error_notice">Please enter a valid email.</h2>
             <form>
@@ -95,7 +95,7 @@
         <img
             alt="Frum Philly Logo"
             class="footer__logo"
-            src="{{ url_for('static', filename='dist/images/logo.svg') }}">
+            src="{{ url_for('static', filename='dist/images/FrumPhilly_2.svg') }}">
         <div class="footer__copyright bauhaus">&copy; {{ currentYear }} <a href="#">frumPhilly.com</a></div>
     </footer>
 
