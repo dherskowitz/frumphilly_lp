@@ -51,8 +51,8 @@
                     <br><br>
                     <h3>When?</h3><br>
                     <div>{{ item.event_date }}</div><br>
-                    <h3>Event Contact(s)</h3><br>
                     {% if item.event_contacts %}
+                        <h3>Event Contact(s)</h3><br>
                         <div>
                             {% for contact in item.event_contacts %}
                                 {{ contact.email }}
