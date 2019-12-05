@@ -18,3 +18,7 @@ $light-grey: #ECECEC;
 $black: #000;
 $white: #fff;
 $light-sea-green: rgba(27, 163, 156, 1);
+
+@mixin text-shadow($spread, $color) {
+    text-shadow: 1px 1px 1px $color;
+}
