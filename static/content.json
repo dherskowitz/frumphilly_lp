@@ -32,7 +32,7 @@
       "event_contacts": [{
         "email": "SMSVED@gmail.com"
       }],
-      "event_attachment": "index.jfif",
+      "event_attachment": "index.jpg",
       "event_date": "December 18th 2019",
       "event_rsvp": false,
       "event_times": [{
@@ -64,7 +64,7 @@
       "event_contacts": [{
         "email": "contact@themesivta.org"
       }],
-      "event_attachment": "the-mesivta.jfif",
+      "event_attachment": "the-mesivta.jpg",
       "event_date": "December 19th 2019",
       "event_rsvp": true,
       "event_times": [{
