@@ -29,7 +29,9 @@
       "event_name": "Pre-Chanukah Festival Party",
       "event_host": "Lower Merion Synagogue",
       "event_location": "123 Lancaster Road, Bala Cynwyd PA 19004",
-      "event_contact": "SMSVED@gmail.com",
+      "event_contacts": [{
+        "email": "SMSVED@gmail.com"
+      }],
       "event_attachment": "index.jfif",
       "event_date": "December 18th 2019",
       "event_rsvp": false,
@@ -45,7 +47,9 @@
       "event_name": "Hanukkah Celebration",
       "event_host": "Mikveh Israel",
       "event_location": "44 North Fourth Street, Philadelphia PA 19106",
-      "event_contact": "info@mikvehisrael.com",
+      "event_contacts": [{
+        "email": "info@mikvehisrael.com"
+      }],
       "event_attachment": "mikveh_israel.pdf",
       "event_date": "December 8th 2019",
       "event_rsvp": false,
@@ -54,10 +58,44 @@
       }]
     },
     {
+      "event_name": "Pre-Chanukah Mesiba",
+      "event_host": "The Mesivta",
+      "event_location": "314 Levering Road, Bala Cynwyd PA 19004",
+      "event_contacts": [{
+        "email": "contact@themesivta.org"
+      }],
+      "event_attachment": "the-mesivta.jfif",
+      "event_date": "December 19th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "7:00pm Featuring Dovid Gabay"
+      }]
+    },
+    {
+      "event_name": "Light Up The Night",
+      "event_host": "Young Israel of Elkins Park",
+      "event_location": "7715 Montgomery Avenue, Elkins Park PA 19027",
+      "event_contacts": [{
+          "email": "joyeschwartz@me.com"
+        },
+        {
+          "email": "israelroling@gmail.com"
+        }
+      ],
+      "event_attachment": "elkins-park-yi.jpeg",
+      "event_date": "December 24th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "5:30pm Entertainment by David Jaison"
+      }]
+    },
+    {
       "event_name": "Pre-Chanukah Event",
       "event_host": "BIOZ Shul",
       "event_location": "8201 Castor Avenue, Philadelphia PA 19152",
-      "event_contact": "Leah Grossman at 810-333-100",
+      "event_contacts": [{
+        "email": "Leah Grossman at 810-333-100"
+      }],
       "event_attachment": "bioz.pdf",
       "event_date": "December 15th 2019",
       "event_rsvp": true,
@@ -66,15 +104,14 @@
       }]
     },
     {
-      "event_name": "Pre-Chanukah Mesiba",
-      "event_host": "The Mesivta",
-      "event_location": "314 Levering Road, Bala Cynwyd PA 19004",
-      "event_contact": "contact@themesivta.org",
-      "event_attachment": "the-mesivta.jfif",
-      "event_date": "December 19th 2019",
+      "event_name": "LMS Pre-Chanukah Boutique",
+      "event_host": "Lower Merion Synagogue",
+      "event_location": "123 Old Lancaster Road, Bala Cynwyd PA 19004",
+      "event_attachment": "lower-merion-syn.jpeg",
+      "event_date": "December 11th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "7:00pm Featuring Dovid Gabay"
+        "time_1": "6-9pm"
       }]
     }
   ]
