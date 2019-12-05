@@ -50,7 +50,7 @@
       "event_contacts": [{
         "email": "info@mikvehisrael.com"
       }],
-      "event_attachment": "mikveh_israel.pdf",
+      "event_attachment": "mikveh_israel.jpeg",
       "event_date": "December 8th 2019",
       "event_rsvp": false,
       "event_times": [{
@@ -96,7 +96,7 @@
       "event_contacts": [{
         "email": "Leah Grossman at 810-333-100"
       }],
-      "event_attachment": "bioz.pdf",
+      "event_attachment": "bioz.jpeg",
       "event_date": "December 15th 2019",
       "event_rsvp": true,
       "event_times": [{
@@ -112,6 +112,43 @@
       "event_rsvp": true,
       "event_times": [{
         "time_1": "6-9pm"
+      }]
+    },
+    {
+      "event_name": "Great Latke Cook-Off",
+      "event_host": "RAJE Philly",
+      "event_location": "198 Tomlinson Road, Philadelphia PA 19116",
+      "event_attachment": "raje-philly.jpeg",
+      "event_date": "December 8th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "time_1": "2-4pm"
+      }]
+    },
+    {
+      "event_name": "Wacky Chanukah Science Show",
+      "event_host": "Politz Hebrew Academy",
+      "event_location": "9225 Old Bustleton Ave, Philadelphia, PA 19115",
+      "event_attachment": "politz.jpeg",
+      "event_date": "December 8th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "4pm Pizza & Carnival",
+        "time_2": "5pm Show Starts"
+      }]
+    },
+    {
+      "event_name": "Pirchei Shabbaton",
+      "event_host": "Pirchei of NE Philadelphia",
+      "event_location": "1425 Rhawn St, Philadelphia, PA 19111",
+      "event_attachment": "pirchei-shabbaton.jpeg",
+      "event_date": "December 13th-14th 2019",
+      "event_rsvp": true,
+      "event_times": [{
+        "time_1": "8:30pm Friday Night Oneg for Men & Boys",
+        "time_2": "3:00pm Talk for Women & Girls Over 10",
+        "time_3": "4:30pm Shalosh Seudos for Men & Boys",
+        "time_4": "6:30pm Gala Melave Malka for Men & Boys"
       }]
     }
   ]
