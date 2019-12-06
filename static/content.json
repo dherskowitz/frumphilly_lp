@@ -36,10 +36,10 @@
       "event_date": "December 18th 2019",
       "event_rsvp": false,
       "event_times": [{
-          "time_1": "5:45pm Dinner from EJ's Place"
+          "time": "5:45pm Dinner from EJ's Place"
         },
         {
-          "time_2": "6:30pm Concert featuring Naftali Blumenthal"
+          "time": "6:30pm Concert featuring Naftali Blumenthal"
         }
       ]
     },
@@ -54,7 +54,7 @@
       "event_date": "December 8th 2019",
       "event_rsvp": false,
       "event_times": [{
-        "4:time_1": "4:30pm 8th Hanukkah candle"
+        "time": "4:30pm 8th Hanukkah candle"
       }]
     },
     {
@@ -68,7 +68,7 @@
       "event_date": "December 19th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "7:00pm Featuring Dovid Gabay"
+        "time": "7:00pm Featuring Dovid Gabay"
       }]
     },
     {
@@ -86,7 +86,7 @@
       "event_date": "December 24th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "5:30pm Entertainment by David Jaison"
+        "time": "5:30pm Entertainment by David Jaison"
       }]
     },
     {
@@ -100,7 +100,7 @@
       "event_date": "December 15th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "1:30pm Featuring Comedian Eli Leboxicz"
+        "time": "1:30pm Featuring Comedian Eli Leboxicz"
       }]
     },
     {
@@ -111,7 +111,7 @@
       "event_date": "December 11th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "6-9pm"
+        "time": "6-9pm"
       }]
     },
     {
@@ -122,7 +122,7 @@
       "event_date": "December 8th 2019",
       "event_rsvp": false,
       "event_times": [{
-        "time_1": "2-4pm"
+        "time": "2-4pm"
       }]
     },
     {
@@ -133,8 +133,9 @@
       "event_date": "December 8th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "4pm Pizza & Carnival",
-        "time_2": "5pm Show Starts"
+        "time": "4pm Pizza & Carnival"
+      }, {
+        "time": "5pm Show Starts"
       }]
     },
     {
@@ -145,10 +146,49 @@
       "event_date": "December 13th-14th 2019",
       "event_rsvp": true,
       "event_times": [{
-        "time_1": "8:30pm Friday Night Oneg for Men & Boys",
-        "time_2": "3:00pm Talk for Women & Girls Over 10",
-        "time_3": "4:30pm Shalosh Seudos for Men & Boys",
-        "time_4": "6:30pm Gala Melave Malka for Men & Boys"
+        "time": "8:30pm Friday Night Oneg for Men & Boys"
+      }, {
+        "time": "3:00pm Talk for Women & Girls Over 10"
+      }, {
+        "time": "4:30pm Shalosh Seudos for Men & Boys"
+      }, {
+        "time": "6:30pm Gala Melave Malka for Men & Boys"
+      }]
+    },
+    {
+      "event_name": "Annual Chanukah Mesibah",
+      "event_host": "Philadelphia Community Kollel",
+      "event_location": "364 Montgomery Avenue, Merion Station PA 19004",
+      "event_attachment": "philly-community-kollel.jpeg",
+      "event_date": "December 23rd 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "8:15pm Program Begins"
+      }]
+    },
+    {
+      "event_name": "My Gift of Mikveh Womens Event",
+      "event_host": "Philadelphia Community Kollel",
+      "event_location": "114 Maple Ave, Bala Cynwyd PA 19004",
+      "event_attachment": "philly-community-kollel-womens-division.jpeg",
+      "event_date": "December 8th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "8:15pm Appreciating My Divine Gift"
+      }]
+    },
+    {
+      "event_name": "Miriam Pascal Cooking Demo",
+      "event_host": "House of Kosher",
+      "event_location": "9806 Busleton Ave, Philadelphia PA 19115",
+      "event_attachment": "house-of-kosher.jpeg",
+      "event_date": "December 15th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "3:30pm Book Signing"
+
+      }, {
+        "time": "4:00pm Cooking Demo"
       }]
     }
   ]
