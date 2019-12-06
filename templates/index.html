@@ -4,7 +4,7 @@
 
     <section
         id="home"
-        style="background:url({{ url_for('static', filename='dist/images/libertybell.jpg') }}) no-repeat center center /cover">
+        style="background:url({{ url_for('static', filename='dist/images/philly-skyline.jpg') }}) no-repeat center center /cover">
         <h1 class="marker capitalize">your community</h1>
         <h1 class="marker capitalize">your philly</h1>
         <img
@@ -51,6 +51,14 @@
                     <br><br>
                     <h3>When?</h3><br>
                     <div>{{ item.event_date }}</div><br>
+                    {% if item.event_times %}
+                        <h3>Schedule</h3>
+                        <ul>
+                            {% for time in item.event_times %}
+                                <li>{{ time.time }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     {% if item.event_contacts %}
                         <h3>Event Contact(s)</h3><br>
                         <div>
