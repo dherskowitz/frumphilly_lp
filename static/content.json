@@ -190,6 +190,17 @@
       }, {
         "time": "4:00pm Cooking Demo"
       }]
+    },
+    {
+      "event_name": "Sivan Rahav Meir",
+      "event_host": "Congregation Beit Harambam",
+      "event_location": "9981 Veree Road, Philadelphia PA 19115",
+      "event_attachment": "beit-harambam.jpeg",
+      "event_date": "December 9th 2019",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "7:30pm Program Begins"
+      }]
     }
   ]
 }
