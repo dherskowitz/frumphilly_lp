@@ -33,7 +33,8 @@
         "email": "SMSVED@gmail.com"
       }],
       "event_attachment": "index.jpg",
-      "event_date": "December 18th 2019",
+      "event_date_string": "December 18th 2019",
+      "event_date_date": "12/18/2019",
       "event_rsvp": false,
       "event_times": [{
           "time": "5:45pm Dinner from EJ's Place"
@@ -51,7 +52,8 @@
         "email": "info@mikvehisrael.com"
       }],
       "event_attachment": "mikveh_israel.jpeg",
-      "event_date": "December 8th 2019",
+      "event_date_string": "December 8th 2019",
+      "event_date_date": "12/08/2019",
       "event_rsvp": false,
       "event_times": [{
         "time": "4:30pm 8th Hanukkah candle"
@@ -65,7 +67,8 @@
         "email": "contact@themesivta.org"
       }],
       "event_attachment": "the-mesivta.jpg",
-      "event_date": "December 19th 2019",
+      "event_date_string": "December 19th 2019",
+      "event_date_date": "12/19/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "7:00pm Featuring Dovid Gabay"
@@ -83,7 +86,8 @@
         }
       ],
       "event_attachment": "elkins-park-yi.jpeg",
-      "event_date": "December 24th 2019",
+      "event_date_string": "December 24th 2019",
+      "event_date_date": "12/24/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "5:30pm Entertainment by David Jaison"
@@ -97,7 +101,8 @@
         "email": "Leah Grossman at 810-333-100"
       }],
       "event_attachment": "bioz.jpeg",
-      "event_date": "December 15th 2019",
+      "event_date_string": "December 15th 2019",
+      "event_date_date": "12/15/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "1:30pm Featuring Comedian Eli Leboxicz"
@@ -108,7 +113,8 @@
       "event_host": "Lower Merion Synagogue",
       "event_location": "123 Old Lancaster Road, Bala Cynwyd PA 19004",
       "event_attachment": "lower-merion-syn.jpeg",
-      "event_date": "December 11th 2019",
+      "event_date_string": "December 11th 2019",
+      "event_date_date": "12/11/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "6-9pm"
@@ -119,7 +125,8 @@
       "event_host": "RAJE Philly",
       "event_location": "198 Tomlinson Road, Philadelphia PA 19116",
       "event_attachment": "raje-philly.jpeg",
-      "event_date": "December 8th 2019",
+      "event_date_string": "December 8th 2019",
+      "event_date_date": "12/08/19",
       "event_rsvp": false,
       "event_times": [{
         "time": "2-4pm"
@@ -130,7 +137,8 @@
       "event_host": "Politz Hebrew Academy",
       "event_location": "9225 Old Bustleton Ave, Philadelphia, PA 19115",
       "event_attachment": "politz.jpeg",
-      "event_date": "December 8th 2019",
+      "event_date_string": "December 8th 2019",
+      "event_date_date": "12/08/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "4pm Pizza & Carnival"
@@ -143,7 +151,8 @@
       "event_host": "Pirchei of NE Philadelphia",
       "event_location": "1425 Rhawn St, Philadelphia, PA 19111",
       "event_attachment": "pirchei-shabbaton.jpeg",
-      "event_date": "December 13th-14th 2019",
+      "event_date_string": "December 13th-14th 2019",
+      "event_date_date": "12/13/19",
       "event_rsvp": true,
       "event_times": [{
         "time": "8:30pm Friday Night Oneg for Men & Boys"
@@ -160,7 +169,8 @@
       "event_host": "Philadelphia Community Kollel",
       "event_location": "364 Montgomery Avenue, Merion Station PA 19004",
       "event_attachment": "philly-community-kollel.jpeg",
-      "event_date": "December 23rd 2019",
+      "event_date_string": "December 23rd 2019",
+      "event_date_date": "12/23/19",
       "event_rsvp": false,
       "event_times": [{
         "time": "8:15pm Program Begins"
@@ -171,7 +181,8 @@
       "event_host": "Philadelphia Community Kollel",
       "event_location": "114 Maple Ave, Bala Cynwyd PA 19004",
       "event_attachment": "philly-community-kollel-womens-division.jpeg",
-      "event_date": "December 8th 2019",
+      "event_date_string": "December 8th 2019",
+      "event_date_date": "12/08/19",
       "event_rsvp": false,
       "event_times": [{
         "time": "8:15pm Appreciating My Divine Gift"
@@ -182,7 +193,8 @@
       "event_host": "House of Kosher",
       "event_location": "9806 Busleton Ave, Philadelphia PA 19115",
       "event_attachment": "house-of-kosher.jpeg",
-      "event_date": "December 15th 2019",
+      "event_date_string": "December 15th 2019",
+      "event_date_date": "12/15/19",
       "event_rsvp": false,
       "event_times": [{
         "time": "3:30pm Book Signing"
@@ -196,7 +208,8 @@
       "event_host": "Congregation Beit Harambam",
       "event_location": "9981 Veree Road, Philadelphia PA 19115",
       "event_attachment": "beit-harambam.jpeg",
-      "event_date": "December 9th 2019",
+      "event_date_string": "December 9th 2019",
+      "event_date_date": "12/09/19",
       "event_rsvp": false,
       "event_times": [{
         "time": "7:30pm Program Begins"

@@ -42,7 +42,7 @@
             <p class="events_disclaimer">As Frum Philly is currently under development, some events listed below may have already occurred.</p>
         </div>
         <div id="upcoming_events">
-            {% for item in content.upcoming_events %}
+            {% for item in content.upcoming_events | sort(attribute='event_date_date') %}
                 <div class="upcoming_events__event" style="background: url({{ url_for('static', filename='dist/images/') }}{{ item.event_attachment }}) no-repeat center center /cover;">
                     <h2 class="event_name marker">{{ item.event_name }}</h2><br>
                     <div>Hosted by {{ item.event_host }}</div><br>
@@ -51,7 +51,7 @@
                     <a class="event_link" target="_blank" href="https://maps.google.com/?q={{ item.event_location }}">See Map</a>
                     <br><br>
                     <h3>When?</h3><br>
-                    <div>{{ item.event_date }}</div><br>
+                    <div>{{ item.event_date_string }}</div><br>
                     {% if item.event_times %}
                         <h3>Schedule</h3>
                         <ul>
