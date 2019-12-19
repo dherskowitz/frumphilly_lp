@@ -214,6 +214,105 @@
       "event_times": [{
         "time": "7:30pm Program Begins"
       }]
+    },
+    {
+      "event_name": "Bensalem Chanukah Extravaganza",
+      "event_host": "Bensalem Jewish Outreach Center",
+      "event_location": "2446 Bristol Road, Bensalem PA 19020",
+      "event_contacts": [{
+        "email": "moshe@bensalemoutreach.org"
+      }],
+      "event_attachment": "bensalem-chanukah-extravaganza.jpg",
+      "event_date_string": "December 23rd 2019",
+      "event_date_date": "12/23/19",
+      "event_rsvp": true,
+      "event_times": [{
+        "time": "6:15pm Doors Open"
+      }, {
+        "time": "6:30pm Program Begins"
+      }]
+    },
+    {
+      "event_name": "Carlebach Shabbos & Concert",
+      "event_host": "CBS Community Center Presents",
+      "event_location": "198 Tomlinson Road, Philadelphia PA 19116",
+      "event_contacts": [{
+        "email": "shuloffice@cbscommunitycenter.com"
+      }],
+      "event_attachment": "cbs-carlebach-shabbos.png",
+      "event_date_string": "December 21st 2019",
+      "event_date_date": "12/21/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "4:25pm Kabalas Shabbos"
+      }]
+    },
+    {
+      "event_name": "Chanukah Ice Skating",
+      "event_host": "CBS Community Center",
+      "event_location": "10990 Decatur Road, Philadelphia PA 19154",
+      "event_attachment": "cbs-chanukah-ice-skating.png",
+      "event_date_string": "December 24th 2019",
+      "event_date_date": "12/24/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "6:00pm - 8:00pm"
+      }]
+    },
+    {
+      "event_name": "Menorah Lighting",
+      "event_host": "CBS Community Center",
+      "event_location": "198 Tomlinson Road, Philadelphia PA 19116",
+      "event_attachment": "cbs-menorah-lighting.png",
+      "event_date_string": "December 22nd 2019",
+      "event_date_date": "12/22/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "5:00pm"
+      }]
+    },
+    {
+      "event_name": "Hanukah Celebration",
+      "event_host": "Cengregation Dibrot Eliyahu",
+      "event_location": "2018 Solly Ave, Philadelphia PA 19111",
+      "event_attachment": "dibrot-eliyahu-hanukah-celebration.jpg",
+      "event_date_string": "December 22nd 2019",
+      "event_date_date": "12/22/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "5:45pm"
+      }, {
+        "time": "6:15pm Special Kids Show"
+      }]
+    },
+    {
+      "event_name": "Car Menorah Parade",
+      "event_host": "Lubavitch of Greater Philadelphia",
+      "event_location": "Benjamin Franklin Parkway and 22nd Street",
+      "event_attachment": "lubavitch-pre-chanukah.jpg",
+      "event_date_string": "December 21st 2019",
+      "event_date_date": "12/21/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "7:00pm"
+      }]
+    },
+    {
+      "event_name": "Pre-Chanukah Shiur",
+      "event_host": "Young Israel of The Main Line",
+      "event_location": "273 Montgomery Ave, Bala Cynwyd, PA 19004",
+      "event_contacts": [{
+        "email": "miriam.gower@gmail.com"
+      }, {
+        "email": "channonrachel@gmail.com"
+      }],
+      "event_attachment": "main-line-yi-pre-chanikah-shiur.jpg",
+      "event_date_string": "December 16th 2019",
+      "event_date_date": "12/16/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "8:15pm"
+      }]
     }
   ]
 }
