@@ -41,6 +41,7 @@
             <h1 class="marker capitalize">Events</h1>
             <p class="events_disclaimer">As Frum Philly is currently under development, some events listed below may have already occurred.</p>
         </div>
+        <p class="small events_mobile_notice">Scroll to see more events ➡</p>
         <div id="upcoming_events">
             {% for item in content.upcoming_events | sort(reverse=True, attribute='event_date_date') %}
                 <div class="upcoming_events__event" style="background: url({{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}) no-repeat center center /cover;">

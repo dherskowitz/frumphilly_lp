@@ -17,6 +17,18 @@ h6 {
     margin: 0;
 }
 
+.only_mobile {
+    display: none;
+
+    @media(max-width: 991px) {
+        display: block;
+    }
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: $black;
@@ -211,27 +223,35 @@ a {
 #upcoming_events {
     font-family: $secondary-font;
     color: $black;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20em, 30em));
-    padding: 2em;
-    grid-gap: 2em;
-    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(20em, 30em));
+    // padding: 2em;
+    // grid-gap: 2em;
+    // justify-content: center;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    overflow-y: scroll;
 
-    @media (max-width: 1600px) {
-        grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
-    }
+    // @media (max-width: 1600px) {
+    //     grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
+    // }
 
-    @media (max-width: 1400px) {
-        grid-template-columns: repeat(auto-fill, minmax(10em, 20em));
-    }
+    // @media (max-width: 1400px) {
+    //     grid-template-columns: repeat(auto-fill, minmax(10em, 20em));
+    // }
 
-    @media (max-width: 1100px) {
-        grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
-    }
+    // @media (max-width: 1100px) {
+    //     grid-template-columns: repeat(auto-fill, minmax(15em, 25em));
+    // }
+}
+
+.events_mobile_notice {
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin: 1em 0 0;
 }
 
 .events_disclaimer {
@@ -244,7 +264,7 @@ a {
     background: $white;
     padding: 1em;
     box-shadow: 0px 2px 6px 0px rgba(103, 128, 159, 1);
-    width: 25em;
+    min-width: 25em;
     margin: 1em;
     // flex-grow: 1;
     position: relative;
@@ -274,7 +294,8 @@ a {
     }
 
     @media (max-width: 991px) {
-        grid-column: span 2;
+        min-width: 20em;
+        font-size: 0.8rem;
     }
 }
 
