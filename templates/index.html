@@ -83,7 +83,7 @@
                     {% for time in item.event_time %}
                         {{ time.event_times }}
                     {% endfor %}
-                    <a class="event_link" href="{{ url_for('static', filename='dist/images/') }}{{ item.event_attachment }}" target="_blank"">More Information</a>
+                    <a class="event_link" href="{{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}" target="_blank"">More Information</a>
                 </div>
             {% endfor %}
         </div>
