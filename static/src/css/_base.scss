@@ -221,6 +221,10 @@ a {
 }
 
 #upcoming_events {
+    cursor: grab;
+}
+
+#upcoming_events {
     font-family: $secondary-font;
     color: $black;
     // display: grid;
@@ -296,6 +300,42 @@ a {
     @media (max-width: 991px) {
         min-width: 20em;
         font-size: 0.8rem;
+    }
+}
+
+#events__featured {
+    color: #000;
+    background: #fff;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 1px 2px 3px 2px #c3c3c3;
+}
+
+.events__featured__title {
+    text-align: center;
+    margin: 0 0 1em;
+    font-size: 4rem;
+    color: #1ba39c;
+    box-shadow: 0 5px 2px -2px #c3c3c3;
+}
+
+#events__featured__event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 35em;
+
+    a {
+        color: rgba(102, 51, 153, 1);
+        font-weight: 600;
+    }
+
+    &>div>video {
+        max-width: 100%;
+        width: 35em;
     }
 }
 
