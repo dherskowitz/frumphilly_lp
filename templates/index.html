@@ -41,51 +41,70 @@
             <h1 class="marker capitalize">Events</h1>
             <p class="events_disclaimer">As Frum Philly is currently under development, some events listed below may have already occurred.</p>
         </div>
-        <p class="small events_mobile_notice">Scroll to see more events ➡</p>
-        <div id="upcoming_events">
-            {% for item in content.upcoming_events | sort(reverse=True, attribute='event_date_date') %}
-                <div class="upcoming_events__event" style="background: url({{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}) no-repeat center center /cover;">
-                    <h2 class="event_name marker">{{ item.event_name }}</h2><br>
-                    <div>Hosted by {{ item.event_host }}</div><br>
-                    <h3>Where?</h3><br>
-                    <div>{{ item.event_location }}</div><br>
-                    <a class="event_link" target="_blank" href="https://maps.google.com/?q={{ item.event_location }}">See Map</a>
-                    <br><br>
-                    <h3>When?</h3><br>
-                    <div>{{ item.event_date_string }}</div><br>
-                    {% if item.event_times %}
-                        <h3>Schedule</h3>
-                        <ul>
-                            {% for time in item.event_times %}
-                                <li>{{ time.time }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                    {% if item.event_contacts %}
-                        <h3>Event Contact(s)</h3><br>
-                        <div>
-                            {% for contact in item.event_contacts %}
-                                {{ contact.email }}
-                            {% endfor %}
-                        </div><br>
-                    {% endif %}
-                    {% if item.event_rsvp %}
-                        <div class="event_rsvp">
-                            <p>Requires RSVP?</p> 
-                            <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/check-circle.svg') }}" alt="">
-                        </div><br>
-                    {% else %}
-                        <div class="event_rsvp">
-                            <p>Requires RSVP?</p> 
-                            <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/x-circle.svg') }}" alt="">
-                        </div><br>
-                    {% endif %}
-                    {% for time in item.event_time %}
-                        {{ time.event_times }}
-                    {% endfor %}
-                    <a class="event_link" href="{{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}" target="_blank"">More Information</a>
+        {% if show_featured %}
+            <div id="events__featured">
+                <h2 class="events__featured__title marker">Featured Event</h2>
+                <div id="events__featured__event">
+                    <div>
+                        <h2>{{ content.featured_event.event_name }}</h2>
+                        <p>{{ content.featured_event.event_location | safe }}</p>
+                        <video controls>
+                            <source src="{{ url_for('static', filename='dist/images/events/') }}{{ content.featured_event.event_video }}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <img src="{{ url_for('static', filename='dist/images/events/') }}{{ content.featured_event.event_image }}">
+                    </div>
                 </div>
-            {% endfor %}
+            </div>
+        {% endif %}
+        <div id="events__main">
+            <p class="small events_mobile_notice">Scroll to see more events ➡</p>
+            <div id="upcoming_events">
+                {% for item in content.upcoming_events | sort(reverse=True, attribute='event_date_date') %}
+                    <div class="upcoming_events__event" style="background: url({{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}) no-repeat center center /cover;">
+                        <h2 class="event_name marker">{{ item.event_name }}</h2><br>
+                        <div>Hosted by {{ item.event_host }}</div><br>
+                        <h3>Where?</h3><br>
+                        <div>{{ item.event_location }}</div><br>
+                        <a class="event_link" target="_blank" href="https://maps.google.com/?q={{ item.event_location }}">See Map</a>
+                        <br><br>
+                        <h3>When?</h3><br>
+                        <div>{{ item.event_date_string }}</div><br>
+                        {% if item.event_times %}
+                            <h3>Schedule</h3>
+                            <ul>
+                                {% for time in item.event_times %}
+                                    <li>{{ time.time }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        {% if item.event_contacts %}
+                            <h3>Event Contact(s)</h3><br>
+                            <div>
+                                {% for contact in item.event_contacts %}
+                                    {{ contact.email }}
+                                {% endfor %}
+                            </div><br>
+                        {% endif %}
+                        {% if item.event_rsvp %}
+                            <div class="event_rsvp">
+                                <p>Requires RSVP?</p> 
+                                <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/check-circle.svg') }}" alt="">
+                            </div><br>
+                        {% else %}
+                            <div class="event_rsvp">
+                                <p>Requires RSVP?</p> 
+                                <img class="event_rsvp__icon" src="{{ url_for('static', filename='dist/images/x-circle.svg') }}" alt="">
+                            </div><br>
+                        {% endif %}
+                        {% for time in item.event_time %}
+                            {{ time.event_times }}
+                        {% endfor %}
+                        <a class="event_link" href="{{ url_for('static', filename='dist/images/events/') }}{{ item.event_attachment }}" target="_blank"">More Information</a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 
