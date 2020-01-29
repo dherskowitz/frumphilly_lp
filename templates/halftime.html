@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div id="halftime_nav">
+        <a href="/"><img src="{{ url_for('static', filename='dist/images') }}/FrumPhilly_2.png" alt=""></a>
+        <span>
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+        </span>
+    </div>
+    <section
+        id="halftime_banner"
+        style="background:url({{ url_for('static', filename='dist/images/philly-skyline.jpg') }}) no-repeat center center /cover">
+        <div>
+            <h3>Chazaq and FrumPhilly Presents:</h3>
+            <h2>Halftime For Torah</h2>
+        </div>
+    </section>
+
+    <div id="halftime_main">
+
+        <div id="halfime_loading">
+            LOADING...
+        </div>
+
+        <div id="halftime_embed">
+            <iframe id="ls_embed_1548713057" onload="frame_loaded()" src="https://livestream.com/accounts/20631388/events/8544053/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" frameborder="0" scrolling="no" allowfullscreen> </iframe><script type="text/javascript" data-embed_id="ls_embed_1548713057" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>  
+        </div>
+
+        <div id="halftime_logos">
+            <a href="https://www.chazaq.org/" target="_blank"><img src="{{ url_for('static', filename='dist/images') }}/chazaq-logo.jpg" alt=""></a>
+            <a href="/"><img src="{{ url_for('static', filename='dist/images') }}/FrumPhilly_2.png" alt=""></a>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div id="contact-overlay">
+            <h2 id="contact-overlay__title">Sending Message... 😃</h2>
+            <img
+                id="contact-overlay__loader"
+                src="{{ url_for('static', filename='dist/images/loading.svg') }}" alt="">
+        </div>
+        <div id="contact-wrapper">
+            <h2 class="contact__title marker capitalize">get informed!</h2>
+            <h4 class="contact__subtitle">Sign up to get notified when FrumPhilly launches.</h4>
+            <h2 id="error_notice">Please enter a valid email.</h2>
+            <form>
+                <input class="form-input" id="signup-email" type="email" name="email" placeholder="Please enter your email..." required>
+                <input  class="form-submit" id="signup-submit" type="submit" value="SEND">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__copyright bauhaus">&copy; {{ currentYear }} <a href="#">frumPhilly.com</a></div>
+    </footer>
+{% endblock content %}

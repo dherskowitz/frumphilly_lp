@@ -49,6 +49,13 @@ def index():
     )
 
 
+@app.route("/halftime")
+def halftime():
+    return render_template(
+        "halftime.html"
+    )
+
+
 @app.route("/signup", methods=["POST"])
 def signup():
     client = gspread.authorize(creds)

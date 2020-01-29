@@ -5,20 +5,22 @@ var contactOverlay = document.querySelector("#contact-overlay");
 var contactOverlayTitle = document.querySelector("#contact-overlay__title");
 var contactOverlayLoader = document.querySelector("#contact-overlay__loader");
 
-signupSubmit.addEventListener("click", function (e) {
-  var formData = new FormData();
-  formData.append("email", signupEmail.value);
-  e.preventDefault();
-  if (signupEmail.value === "") {
-    errorNotice.classList.add("show");
-  } else {
-    if (errorNotice.classList.contains("show")) {
-      errorNotice.classList.remove("show");
+if (signupSubmit) {
+  signupSubmit.addEventListener("click", function (e) {
+    var formData = new FormData();
+    formData.append("email", signupEmail.value);
+    e.preventDefault();
+    if (signupEmail.value === "") {
+      errorNotice.classList.add("show");
+    } else {
+      if (errorNotice.classList.contains("show")) {
+        errorNotice.classList.remove("show");
+      }
+      contactOverlay.classList.add("show");
+      sendMail(formData);
     }
-    contactOverlay.classList.add("show");
-    sendMail(formData);
-  }
-});
+  });
+}
 
 function sendMail(form) {
   fetch("/signup", {
@@ -47,27 +49,40 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-  slider.style.cursor = "grabbing"
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.style.cursor = "grab"
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  // console.log(walk);
-});
+if (slider) {
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.style.cursor = "grabbing"
+  });
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.style.cursor = "grab"
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    // console.log(walk);
+  });
+}
+
+
+// Halftime page
+let halftime_frame_container = document.querySelector('#halftime_embed');
+let halftime_frame = document.querySelector('#ls_embed_1548713057');
+let halfime_loading = document.querySelector('#halfime_loading');
+if (halftime_frame_container) {
+  frame_loaded = function () {
+    halfime_loading.parentNode.removeChild(halfime_loading);
+  }
+}

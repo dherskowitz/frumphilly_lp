@@ -329,7 +329,7 @@
   ],
   "featured_event": {
     "event_name": "Halftime for Torah",
-    "event_location": "Streamed during halftime on <a href=\"frumphilly.com/halftime\">FrumPhilly.com</a>",
+    "event_location": "Streamed during halftime on <a href=\"/halftime\">FrumPhilly.com</a>",
     "event_image": "halftime-for-torah/Halftime-for-Torah.jpg",
     "event_video": "halftime-for-torah/halftime-for-torah.mp4"
   }

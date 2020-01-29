@@ -1,0 +1,136 @@
+body {
+    margin-top: 60px;
+
+    @media(max-width: 400px) {
+        margin-top: 40px;
+    }
+}
+
+#halftime_nav {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1em;
+    top: 0;
+
+    a>img {
+        width: 10em;
+
+        @media(max-width: 400px) {
+            width: 5em;
+        }
+    }
+
+    span {
+        margin-right: 4em;
+        display: flex;
+        justify-content: space-between;
+        width: 8em;
+
+        @media(max-width: 500px) {
+            margin-right: 2em;
+        }
+    }
+
+    @media(max-width: 400px) {
+        padding: 1em;
+    }
+}
+
+#halftime_banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 3rem;
+    z-index: 1;
+    text-shadow: 2px 2px 3px #000;
+    padding: 0 2em;
+
+    @media(max-width: 991px) {
+        font-size: 2rem;
+    }
+
+    @media(max-width: 400px) {
+        font-size: 1.5rem;
+    }
+}
+
+#halftime_banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#halftime_main {
+    color: $black;
+}
+
+#halftime_embed iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+#halftime_logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em;
+
+    img {
+        max-width: 25em;
+    }
+
+    @media(max-width: 991px) {
+        img {
+            max-width: 18em;
+        }
+    }
+
+    @media(max-width: 730px) {
+        flex-direction: column;
+
+        a:first-child {
+            margin-bottom: 3em;
+        }
+    }
+}
+
+#halfime_loading {
+    width: 100%;
+    height: 50vh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash linear 1s infinite;
+
+    @media(max-width: 730px) {
+        font-size: 2rem;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
