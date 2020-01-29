@@ -37,10 +37,16 @@ def get_client_ip(request):
 
 @app.route("/")
 def index():
+    show_featured = True
     filename = os.path.join(app.static_folder, "content.json")
     with open(filename) as content:
         data = json.load(content)
-    return render_template("index.html", currentYear=datetime.now().year, content=data)
+    return render_template(
+        "index.html",
+        currentYear=datetime.now().year,
+        content=data,
+        show_featured=show_featured,
+    )
 
 
 @app.route("/signup", methods=["POST"])
