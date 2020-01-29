@@ -20,7 +20,7 @@
     <link rel="icon" href="{{ url_for('static', filename='dist/images/favicon.ico') }}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Caveat|Sulphur+Point&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="{{ url_for(request.endpoint) | reverse | replace("/", "", 1) | reverse }}">
 
     <main>
         {% block content %}
