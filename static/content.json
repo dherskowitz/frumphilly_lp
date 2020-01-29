@@ -313,6 +313,24 @@
       "event_times": [{
         "time": "8:15pm"
       }]
+    },
+    {
+      "event_name": "Halftime for Torah",
+      "event_host": "Young Israel of The Main Line",
+      "event_location": "Streamed during halftime on <a href=\"frumphilly.com/halftime\"></a>",
+      "event_attachment": "main-line-yi-pre-chanikah-shiur.jpg",
+      "event_date_string": "December 16th 2019",
+      "event_date_date": "12/16/19",
+      "event_rsvp": false,
+      "event_times": [{
+        "time": "8:15pm"
+      }]
     }
-  ]
+  ],
+  "featured_event": {
+    "event_name": "Halftime for Torah",
+    "event_location": "Streamed during halftime on <a href=\"frumphilly.com/halftime\">FrumPhilly.com</a>",
+    "event_image": "halftime-for-torah/Halftime-for-Torah.jpg",
+    "event_video": "halftime-for-torah/halftime-for-torah.mp4"
+  }
 }
