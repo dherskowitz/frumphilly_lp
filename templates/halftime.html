@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
 
+{% block fonts %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois+One&display=swap&effect=outline&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+{% endblock fonts %}
+
 {% block content %}
     <div id="halftime_nav">
         <a href="/"><img src="{{ url_for('static', filename='dist/images') }}/FrumPhilly_2.png" alt=""></a>
@@ -11,10 +15,10 @@
     </div>
     <section
         id="halftime_banner"
-        style="background:url({{ url_for('static', filename='dist/images/philly-skyline.jpg') }}) no-repeat center center /cover">
+        style="background:url({{ url_for('static', filename='dist/images/halftime-bg.jpg') }}) no-repeat center center /cover">
         <div>
-            <h3>Chazaq and FrumPhilly Presents:</h3>
-            <h2>Halftime For Torah</h2>
+            <h3 id="halftime_banner__title">Chazaq and FrumPhilly Presents:</h3>
+            <h2 id="halftime_banner__subtitle">Halftime For Torah</h2>
         </div>
     </section>
 

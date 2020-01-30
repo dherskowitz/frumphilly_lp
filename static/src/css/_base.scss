@@ -329,8 +329,9 @@ a {
     max-width: 35em;
 
     a {
-        color: rgba(102, 51, 153, 1);
+        color: #242aea;
         font-weight: 600;
+        text-decoration: underline;
     }
 
     &>div>video {

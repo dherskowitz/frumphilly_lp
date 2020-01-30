@@ -47,7 +47,7 @@ body#halftime {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     font-size: 3rem;
     z-index: 1;
     text-shadow: 2px 2px 3px #000;
@@ -59,6 +59,29 @@ body#halftime {
 
     @media(max-width: 400px) {
         font-size: 1.5rem;
+    }
+}
+
+#halftime_banner__title,
+#halftime_banner__subtitle {
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#halftime_banner__title {
+    font-size: 3rem;
+
+    @media(max-width: 700px) {
+        font-size: 1.8rem;
+    }
+}
+
+#halftime_banner__subtitle {
+    font-size: 7rem;
+
+    @media(max-width: 700px) {
+        font-size: 4rem;
     }
 }
 

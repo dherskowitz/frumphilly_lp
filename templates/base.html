@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='dist/images/favicon.ico') }}" type="image/x-icon">
     <link rel="icon" href="{{ url_for('static', filename='dist/images/favicon.ico') }}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Caveat|Sulphur+Point&display=swap" rel="stylesheet">
+    {% block fonts %}{% endblock fonts %}
 </head>
 <body id="{{ url_for(request.endpoint) | reverse | replace("/", "", 1) | reverse }}">
 
