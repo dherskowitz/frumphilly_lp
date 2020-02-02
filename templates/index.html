@@ -49,6 +49,12 @@
                     <div>
                         <h2>{{ content.featured_event.event_name }}</h2>
                         <p>{{ content.featured_event.event_location | safe }}</p>
+                        <div id="events__featured__event__cta">
+                            <p id="events__featured__event__cta__title">
+                            Ready for Halftime?
+                            <a id="events__featured__event__cta__link" href="/halftime">Go to Stream!</a>
+                            </p>
+                        </div>
                         <video controls>
                             <source src="{{ url_for('static', filename='dist/images/events/') }}{{ content.featured_event.event_video }}" type="video/mp4">
                         </video>

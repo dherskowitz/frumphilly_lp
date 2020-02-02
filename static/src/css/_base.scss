@@ -340,6 +340,27 @@ a {
     }
 }
 
+#events__featured__event {}
+
+#events__featured__event__cta__title {
+    margin: 2em;
+}
+
+#events__featured__event__cta__link {
+    background: #1ba39c;
+    padding: 0.5em 1em;
+    width: 8em;
+    margin: 1em auto;
+    color: #fff !important;
+    font-weight: 300 !important;
+    border-radius: 6px;
+    box-shadow: 1px 2px 1px 1px #c3c3c3;
+
+    @media (max-width: 500px) {
+        display: block;
+    }
+}
+
 #upcoming_events__title {
     background: $light-sea-green;
     font-size: 4em;
